@@ -1,0 +1,81 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#004C99">
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Android"
+        android:textSize="40dp"
+        android:textColor="#FFFFFF"
+        android:layout_above="@id/inner_linear_layout"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="150dp"/>
+
+    <LinearLayout
+        android:id="@+id/inner_linear_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/enter_name_edit_text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+        android:id="@+id/say_hello_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="say hello"
+        />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hello_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Greetings"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_below="@id/inner_linear_layout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hello_text_view"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/positive_button"
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="Positive"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/negative_button"
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="Negative"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>>
+
+</RelativeLayout>
